@@ -11,7 +11,7 @@ import streamlit as st
 #Api_key = os.getenv("GOOGLE_API_KEY")
 #if not Api_key:
 #    raise ValueError("API KEY NOT FOUND")
-api_key = st.secrets["GEMINI_API_KEY"]
+Api_key = st.secrets["GEMINI_API_KEY"]
 
 client = genai.Client(api_key=Api_key)
 
@@ -63,4 +63,5 @@ def narrate_story(story_text):
     except Exception as e:
 
         return f"An unexpected error  occured during the API call"
+
 
