@@ -5,11 +5,12 @@ from http.client import responses
 from gtts import gTTS
 from io import BytesIO
 
-load_dotenv()
+#load_dotenv()
 
-Api_key = os.getenv("GOOGLE_API_KEY")
-if not Api_key:
-    raise ValueError("API KEY NOT FOUND")
+#Api_key = os.getenv("GOOGLE_API_KEY")
+#if not Api_key:
+#    raise ValueError("API KEY NOT FOUND")
+api_key = st.secrets["GEMINI_API_KEY"]
 
 client = genai.Client(api_key=Api_key)
 
@@ -59,4 +60,5 @@ def narrate_story(story_text):
         audio_fp.seek(0)
         return audio_fp
     except Exception as e:
+
         return f"An unexpected error  occured during the API call"
