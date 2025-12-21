@@ -4,6 +4,7 @@ import os
 from http.client import responses
 from gtts import gTTS
 from io import BytesIO
+import streamlit as st
 
 #load_dotenv()
 
@@ -62,3 +63,4 @@ def narrate_story(story_text):
     except Exception as e:
 
         return f"An unexpected error  occured during the API call"
+
