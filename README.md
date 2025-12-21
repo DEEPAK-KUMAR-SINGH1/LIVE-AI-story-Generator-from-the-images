@@ -1,4 +1,4 @@
-🖼️ AI Story Generator from Images - live = https://ai-story-generator-from-the-images.streamlit.app/
+🖼️ AI Story Generator from Images - live = https://taleifyai.streamlit.app/
 
 An AI-powered story generator that transforms images into engaging stories.
 Upload an image and let AI analyze visual elements, emotions, and details to create a unique and creative narrative in seconds.
