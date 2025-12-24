@@ -61,8 +61,8 @@ def narrate_story(story_text):
         audio_fp.seek(0)
         return audio_fp
     except Exception as e:
-        
         return f"An unexpected error  occured during the API call"
+
 
 
 
