@@ -55,13 +55,14 @@ def generate_story_from_images(image,style):
 # function -- story --- audio file.
 def narrate_story(story_text):
     try:
-        tts= gTTS(text=story_text, lang="eg", slow=False)
+        tts= gTTS(text=story_text, lang="en", slow=False)
         audio_fp = BytesIO()
         tts.write_to_fp(audio_fp)
         audio_fp.seek(0)
         return audio_fp
     except Exception as e:
         return f"An unexpected error  occured during the API call"
+
 
 
 
