@@ -60,9 +60,10 @@ def narrate_story(story_text):
         tts.write_to_fp(audio_fp)
         audio_fp.seek(0)
         return audio_fp
-    except Exception as e:
+#    except Exception as e:
 
-        return f"An unexpected error  occured during the API call"
+#        return f"An unexpected error  occured during the API call"
+
 
 
 
