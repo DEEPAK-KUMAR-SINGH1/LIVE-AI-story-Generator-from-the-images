@@ -42,7 +42,7 @@ if generate_button:
 
                 for i ,image in enumerate(pil_images):
                     with image_columns [i]:
-                        st.image(image,use_container_width=True)
+                        st.image(image, width='stretch')
 
                 generate_story = generate_story_from_images(pil_images,story_style)
                 if "error" in generate_story or "failed" in generate_story or "API KEY" in generate_story:
@@ -57,4 +57,5 @@ if generate_button:
                     st.audio(audio_file,format="audio/mp3")
 
             except Exception as e:
+
                 st.error(f"An Application Error Occorred {e}")
